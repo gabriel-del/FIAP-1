@@ -1,27 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* cores */
+  --primary: #004d61;
+  --secondary: #ff5031;
+  --cinza: #dee9ea;
+  --cinza-2: #cbcbcb;
+  --verde-claro: #f8f8f8;
+  --verde: #e4ede3;
+  --branco: #ffffff;
+  --success: #47a138;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* fontes */
+  --font-family-base: "Inter";
+  --font-lg: 1.562rem/120%;
+  --font-md: 1.25rem/120%;
+  --font-sm: 1rem/120%;
+  --font-xs: 0.812rem/120%;
+
+  --font-lg-bold: 700 var(--font-lg) var(--font-family-base);
+  --font-lg-semibold: 600 var(--font-lg) var(--font-family-base);
+  --font-lg-regular: 400 var(--font-lg) var(--font-family-base);
+  --font-lg-tiny: 300 var(--font-lg) var(--font-family-base);
+  --font-md-bold: 700 var(--font-md) var(--font-family-base);
+  --font-md-semibold: 600 var(--font-md) var(--font-family-base);
+  --font-md-regular: 400 var(--font-md) var(--font-family-base);
+  --font-md-tiny: 300 var(--font-md) var(--font-family-base);
+  --font-sm-bold: 700 var(--font-sm) var(--font-family-base);
+  --font-sm-semibold: 600 var(--font-sm) var(--font-family-base);
+  --font-sm-regular: 400 var(--font-sm) var(--font-family-base);
+  --font-sm-tiny: 300 var(--font-sm) var(--font-family-base);
+  --font-xs-bold: 700 var(--font-xs) var(--font-family-base);
+  --font-xs-semibold: 600 var(--font-xs) var(--font-family-base);
+  --font-xs-regular: 400 var(--font-xs) var(--font-family-base);
+  --font-xs-tiny: 300 var(--font-xs) var(--font-family-base);
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+  --spacing-11: 48px;
+  --spacing-12: 52px;
+  --spacing-13: 56px;
+  --spacing-14: 58px;
+  --spacing-15: 60px;
+  --spacing-16: 64px;
+
+  --header-height: 6rem;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--verde);
 }
 
 * {
@@ -35,8 +72,6 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+ul {
+  list-style: none;
 }

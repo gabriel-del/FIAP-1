@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--primary);
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-6);
+
+  .avatar-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .nome-cliente {
+      font: var(--font-xs-semibold);
+      color: var(--branco);
+      margin-right: 2.5rem;
+    }
+  }
+}

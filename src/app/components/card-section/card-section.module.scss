@@ -1,0 +1,19 @@
+.card {
+  height: auto;
+  min-height: 25rem;
+  width: 43.125rem;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: var(--spacing-6);
+  margin-bottom: var(--spacing-6);
+  padding: var(--spacing-6);
+
+  &.primary {
+    background-color: var(--primary);
+  }
+
+  &.secondary {
+    background-color: var(--cinza-2);
+  }
+}

@@ -1,0 +1,28 @@
+.botao {
+  width: 15.625rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 2px solid;
+  background-color: var(--primary);
+  color: var(--branco);
+  cursor: pointer;
+  transition: 250ms;
+
+  &.primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  &.verde-claro {
+    background-color: var(--verde-claro);
+    color: #024d60;
+    border-color: var(--verde-claro);
+  }
+  &.laranja {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

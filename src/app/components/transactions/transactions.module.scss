@@ -1,0 +1,51 @@
+.transactions-container {
+  width: 17.625rem;
+  background-color: var(--branco);
+  border-radius: 8px;
+  padding: var(--spacing-6);
+  max-height: calc(100vh - var(--header-height) - var(--spacing-6));
+  overflow-y: auto;
+
+  .mes {
+    text-transform: capitalize;
+    font: var(--font-xs-semibold);
+    color: var(--primary);
+    margin-bottom: var(--spacing-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .tipo,
+  .valor {
+    text-transform: capitalize;
+    font: var(--font-sm-regular);
+    color: var(--cinza);
+  }
+
+  .valor {
+    font: var(--font-sm-semibold);
+  }
+
+  .divider {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+    margin-block: var(--spacing-6);
+  }
+}
+
+.titulo-extrato {
+  font: var(--font-lg-bold);
+  margin-bottom: var(--spacing-8);
+}
