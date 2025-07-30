@@ -1,0 +1,13 @@
+@media screen and (max-width: 970px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    flex-wrap: wrap;
+  }
+}

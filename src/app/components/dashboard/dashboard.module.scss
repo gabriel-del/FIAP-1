@@ -50,3 +50,21 @@
     color: var(--branco);
   }
 }
+
+@media screen and (max-width: 970px) {
+  .cliente,
+  .saldo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cliente,
+  .saldo {
+    align-items: center;
+  }
+  .nome,
+  .data {
+    text-align: center;
+  }
+}

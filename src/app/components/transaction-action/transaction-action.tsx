@@ -62,7 +62,7 @@ export default function TransactionAction() {
   };
   return (
     <CardSection variante="secondary">
-      <div>
+      <div className={styles["card-transaction-container"]}>
         <div className={styles["titulo-card"]}>Nova transação</div>
         <div className={styles.dropdown}>
           <Dropdown

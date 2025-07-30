@@ -19,3 +19,15 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .nome-cliente {
+    display: none;
+  }
+
+  .header {
+    .avatar-container {
+      justify-content: space-between;
+    }
+  }
+}

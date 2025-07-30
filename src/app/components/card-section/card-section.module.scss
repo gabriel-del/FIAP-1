@@ -17,3 +17,18 @@
     background-color: var(--cinza-2);
   }
 }
+
+@media screen and (max-width: 970px) {
+  .card {
+    display: flex;
+    width: calc(50% - 12px);
+    margin-inline: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    width: 100%;
+    flex-grow: 1;
+  }
+}

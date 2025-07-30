@@ -1,0 +1,47 @@
+.item {
+  text-align: center;
+  padding-block: var(--spacing-4);
+  color: var(--primary);
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s;
+
+  &:not(:last-child)::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+  }
+
+  &.activated {
+    font: var(--font-sm-bold);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .item {
+    &:last-child::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      width: 100%;
+      height: 1px;
+      background-color: var(--primary);
+    }
+
+    &.activated::after {
+      height: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

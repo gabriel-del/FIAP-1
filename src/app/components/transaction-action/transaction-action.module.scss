@@ -28,3 +28,12 @@
     margin-bottom: var(--spacing-8);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .card-transaction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

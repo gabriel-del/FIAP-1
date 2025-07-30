@@ -1,0 +1,46 @@
+.hamburger {
+  display: none;
+
+  button {
+    font: var(--font-lg-bold);
+    color: var(--secondary);
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+
+  nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--cinza);
+    width: 180px;
+    border-radius: 0 0 8px 0;
+
+    .close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem 0.5rem 0 0.5rem;
+      button {
+        font: var(--font-sm-regular);
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-inline: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+
+    &.ativo {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: flex;
+  }
+}

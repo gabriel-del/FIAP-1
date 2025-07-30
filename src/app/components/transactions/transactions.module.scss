@@ -49,3 +49,24 @@
   font: var(--font-lg-bold);
   margin-bottom: var(--spacing-8);
 }
+
+@media screen and (max-width: 1200px) {
+  .transactions-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .transactions-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .transactions-container {
+    margin-bottom: var(--spacing-6);
+  }
+}
