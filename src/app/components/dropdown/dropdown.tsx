@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import styles from "./dropdown.module.scss";
 import { DropdownOption } from "@/app/models/dropdown-options";
 import Image from "next/image";
+import { useBasePath } from "../../hooks/useBasePath";
 
 export type DropdownProps = Readonly<{
   options: DropdownOption[];
@@ -17,6 +18,7 @@ export default function Dropdown({
   const ref = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<DropdownOption | null>(null);
+  const { getAssetUrl } = useBasePath();
   const toggleOpen = () => setOpen((prev) => !prev);
 
   const handleSelect = (option: DropdownOption) => {
@@ -42,7 +44,7 @@ export default function Dropdown({
         {selected ? selected.label : placeholder}
         <div className={`${styles.arrow} ${open ? styles.rotateArrow : ""}`}>
           <Image
-            src="/imagens/icons/arrow_drop_down.svg"
+            src={getAssetUrl("/imagens/icons/arrow_drop_down.svg")}
             alt="Ícone seta dropdown"
             width={16}
             height={16}

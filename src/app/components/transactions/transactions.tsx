@@ -5,9 +5,11 @@ import Image from "next/image";
 import { formatCurrencyBRL } from "@/app/utils/currency";
 import { TipoTransacaoEnum } from "@/app/enums/tipo-transacao.enum";
 import { useTransacoesContext } from "@/app/contexts/transacao-context";
+import { useBasePath } from "../../hooks/useBasePath";
 
 export default function Transactions() {
   const { transacoes, remover } = useTransacoesContext();
+  const { getAssetUrl } = useBasePath();
 
   return (
     <aside className={styles["transactions-container"]}>
@@ -18,7 +20,7 @@ export default function Transactions() {
             <div className={styles.mes}>
               {moment(transacao.data).format("DD MMMM YYYY")}
               <Image
-                src="/imagens/icons/remove.svg"
+                src={getAssetUrl("/imagens/icons/remove.svg")}
                 alt="remover transação"
                 width={40}
                 height={40}

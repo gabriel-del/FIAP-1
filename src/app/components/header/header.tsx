@@ -2,8 +2,11 @@ import Container from "../container/container";
 import Hamburger from "../hamburger/hamburger";
 import styles from "./header.module.scss";
 import Image from "next/image";
+import { useBasePath } from "../../hooks/useBasePath";
 
 export default function Header() {
+  const { getAssetUrl } = useBasePath();
+  
   return (
     <header className={styles.header}>
       <Container>
@@ -13,7 +16,7 @@ export default function Header() {
             Joana da Silva Oliveira
           </span>
           <Image
-            src="/imagens/header/header-avatar.svg"
+            src={getAssetUrl("/imagens/header/header-avatar.svg")}
             alt="avatar"
             width={40}
             height={40}
